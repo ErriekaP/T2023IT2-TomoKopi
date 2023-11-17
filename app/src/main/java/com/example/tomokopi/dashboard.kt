@@ -101,7 +101,7 @@ class dashboard : AppCompatActivity() {
                     val user = mAuth.currentUser
                     Toast.makeText(
                         baseContext,
-                        "Authentication failed.",
+                        "Authentication successful.",
                         Toast.LENGTH_SHORT,
                     ).show()
                     updateUI(user)

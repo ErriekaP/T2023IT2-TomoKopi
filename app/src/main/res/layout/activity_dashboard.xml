@@ -22,7 +22,7 @@ tools:context=".dashboard">
         android:layout_width="match_parent"
         android:layout_height="145dp"
         android:layout_marginTop="20dp"
-        tools:srcCompat="@drawable/cmas_logo" />
+        app:srcCompat="@drawable/cmas_logo" />
 
     <TextView
         android:id="@+id/textView5"
@@ -50,6 +50,7 @@ tools:context=".dashboard">
             android:ems="10"
             android:hint="Email"
             android:inputType="textEmailAddress"
+            android:minHeight="48dp"
             android:textAlignment="center" />
 
         <EditText
@@ -61,6 +62,7 @@ tools:context=".dashboard">
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
+            android:minHeight="48dp"
             android:textAlignment="center" />
 
         <Button

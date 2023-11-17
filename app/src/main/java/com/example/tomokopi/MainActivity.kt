@@ -22,7 +22,8 @@ class MainActivity : AppCompatActivity() {
         _btnLogout = findViewById(R.id.btnLogout)
         _btnLogout.setOnClickListener{
             Firebase.auth.signOut()
-            finish()
+            var intent = Intent(this, dashboard:: class.java)
+            startActivity(intent)
         }
     }
 

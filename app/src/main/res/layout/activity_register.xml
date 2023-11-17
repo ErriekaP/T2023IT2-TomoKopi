@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="145dp"
             android:layout_marginTop="20dp"
-            tools:srcCompat="@drawable/cmas_logo" />
+            app:srcCompat="@drawable/cmas_logo" />
 
         <TextView
             android:id="@+id/textView5"
@@ -40,7 +40,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/etRegEmail"
+                android:id="@+id/etName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -48,6 +48,19 @@
                 android:ems="10"
                 android:hint="Display Name"
                 android:inputType="text"
+                android:minHeight="48dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/etRegEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
                 android:textAlignment="center" />
 
             <EditText
@@ -57,19 +70,9 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:ems="10"
-                android:hint="Email"
-                android:inputType="textEmailAddress"
-                android:textAlignment="center" />
-
-            <EditText
-                android:id="@+id/etLogPass"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:ems="10"
                 android:hint="Password"
                 android:inputType="textPassword"
+                android:minHeight="48dp"
                 android:textAlignment="center" />
 
             <Button
