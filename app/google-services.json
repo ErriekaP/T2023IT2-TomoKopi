@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "240203863097",
+    "project_id": "it2-tomokopi",
+    "storage_bucket": "it2-tomokopi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240203863097:android:5441052f303614537ea9e8",
+        "android_client_info": {
+          "package_name": "com.example.tomokopi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240203863097-5embc21d6uvb1mv0fari5r0920bmprao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMNZE3_lE6k9m0tXv2CqOj6pWEvN0kRfI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240203863097-5embc21d6uvb1mv0fari5r0920bmprao.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
