@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_width">300dp</dimen>
+    <dimen name="imageView_width">150dp</dimen>
+    <dimen name="imageView_height">150dp</dimen>
+    <dimen name="card_margin_bottom">20dp</dimen>
+    <dimen name="cardLinearLayout_padding_x">20dp</dimen>
+    <dimen name="cardLinearLayout_padding_y">10dp</dimen>
+    <dimen name="textView_title_margin_top">10dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

@@ -11,10 +11,13 @@ import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.auth
+import com.google.firebase.firestore.firestore
 
 class RegisterActivity : AppCompatActivity() {
 
     lateinit var mAuth: FirebaseAuth
+    private val userCollection = "users"
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,6 +58,7 @@ class RegisterActivity : AppCompatActivity() {
                 }
 
         }
+
     }
 
     fun updateUI(user: FirebaseUser?){

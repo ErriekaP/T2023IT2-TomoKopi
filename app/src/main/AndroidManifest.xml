@@ -16,6 +16,14 @@
         android:theme="@style/Theme.TomoKopi"
         tools:targetApi="31">
         <activity
+            android:name=".ProductAddActivity"
+            android:exported="false"
+            android:label="@string/title_activity_product_add"
+            android:theme="@style/Theme.TomoKopi" />
+        <activity
+            android:name=".ProductViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".dashboard"
             android:exported="false" />
         <activity
