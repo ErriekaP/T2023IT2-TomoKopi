@@ -20,21 +20,26 @@ class RegisterActivity : AppCompatActivity() {
 
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_register)
+        val db = Firebase.firestore
 
         mAuth = FirebaseAuth.getInstance()
 
         val etEmail = findViewById<EditText>(R.id.etRegEmail)
         val etPassw = findViewById<EditText>(R.id.etRegPassw)
-
+        val etName = findViewById<EditText>(R.id.etName)
+        val etphotoUrl = findViewById<EditText>(R.id.etphotoUrl)
         val btnRegister = findViewById<Button>(R.id.btnRegister)
         btnRegister.setOnClickListener{
 
             var valemail = etEmail.text.toString()
             var valpassw = etPassw.text.toString()
+            var valname = etName.text.toString()
+            var valphotoUrl = etphotoUrl.text.toString()
 
             var TAG = "ZZZTagFirebase"
 
@@ -43,8 +48,33 @@ class RegisterActivity : AppCompatActivity() {
                     if (task.isSuccessful) {
                         // Sign in success, update UI with the signed-in user's information
                         Log.d(TAG, "createUserWithEmail:success")
-                            val user = mAuth.currentUser
-                            updateUI(user)
+
+                        val data = hashMapOf(
+                            "email" to valemail,
+                            "name" to valname,
+                            "photoUrl" to valphotoUrl
+
+                        )
+
+                        db.collection("users").document()
+                            .set(data)
+                            .addOnSuccessListener {
+                                Toast.makeText(
+                                    baseContext,
+                                    "You have successfully registered!",
+                                    Toast.LENGTH_SHORT,
+                                ).show()
+                                val user = mAuth.currentUser
+                                updateUI(user)
+                            }
+                            .addOnFailureListener {
+                                Toast.makeText(
+                                    baseContext,
+                                    "Your registration failed!",
+                                    Toast.LENGTH_SHORT,
+                                ).show()
+                            }
+
                     } else {
                         // If sign in fails, display a message to the user.
                         Log.w(TAG, "createUserWithEmail:failure", task.exception)
