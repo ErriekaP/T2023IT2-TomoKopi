@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                     val imageUrlTemp = document.data["photoUrl"].toString()
                     val imageUrl = imageUrlTemp.substring(1, imageUrlTemp.length - 2)
                     val priceTemp = document.data["price"].toString()
-                    val price = priceTemp
+                    val price = String.format("₱ %.2f", priceTemp.toFloat())
                     val title = document.data["name"].toString()
 //                    Log.d("ZZZ", description)
 //                    Log.d("ZZZ", imageUrl)
