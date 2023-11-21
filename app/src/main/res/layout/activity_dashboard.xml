@@ -4,41 +4,51 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:background="#000000"
+android:background="@color/tan"
 tools:context=".dashboard">
 
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F4DFC0"
+    android:background="@color/tan"
     android:orientation="vertical"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="145dp"
-        android:layout_marginTop="20dp"
-        app:srcCompat="@drawable/cmas_logo" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:fontFamily="@font/comic_neue_italic"
-        android:text="Tomo Kopi"
-        android:textAlignment="center"
-        android:textSize="40sp"
-        android:textStyle="bold" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_weight="1"
         android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/cmas_logo" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/comic_neue_italic"
+            android:text="Tomo Kopi"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="top"
         android:orientation="vertical">
 
         <EditText
@@ -71,7 +81,7 @@ tools:context=".dashboard">
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:backgroundTint="#AC1B1B"
+            android:backgroundTint="@color/red"
             android:text="Login"
             app:cornerRadius="0dp" />
 
@@ -81,7 +91,7 @@ tools:context=".dashboard">
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:backgroundTint="#AC1B1B"
+            android:backgroundTint="@color/red"
             android:text="Register"
             app:cornerRadius="0dp" />
     </LinearLayout>
