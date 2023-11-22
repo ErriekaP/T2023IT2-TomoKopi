@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/tan"
     tools:context=".ProductViewActivity">
 
     <ScrollView
@@ -24,6 +25,9 @@
                 android:id="@+id/viewProductImage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
                 tools:srcCompat="@tools:sample/avatars" />
 
             <LinearLayout
@@ -55,8 +59,8 @@
                     android:layout_height="wrap_content"
                     android:inputType="textMultiLine"
                     android:minHeight="48dp"
-                    android:text="is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-                    android:textAlignment="textStart"/>
+                    android:text="Dummy text"
+                    android:textAlignment="textStart" />
 
                 <TextView
                     android:id="@+id/viewProductPrice"
@@ -66,7 +70,7 @@
                     android:ems="10"
                     android:inputType="text"
                     android:minHeight="48dp"
-                    android:text="Name"
+                    android:text="Price"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -74,7 +78,7 @@
                     android:id="@+id/viewProductBackButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#5A5A5A"
+                    android:backgroundTint="@color/red"
                     android:text="Back"
                     app:cornerRadius="5dp" />
             </LinearLayout>

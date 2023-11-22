@@ -48,7 +48,7 @@ class ProductAddActivity : AppCompatActivity() {
                     "name" to name,
                     "description" to description,
                     "price" to priceDouble,
-                    "photoUrl" to photoUrl,
+                    "photoUrl" to arrayListOf(photoUrl),
                     "dateCreated" to Timestamp(Date())
                 )
 
