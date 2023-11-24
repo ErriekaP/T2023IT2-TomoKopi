@@ -72,8 +72,7 @@ class MainActivity : AppCompatActivity() {
                         setMargins(0, 0, 0, resources.getDimensionPixelOffset(R.dimen.card_margin_bottom))
                     }
                     cardV.layoutParams = cardVParams
-
-
+                    cardV.radius = 40f
 
                     val cardLinearLayout = LinearLayout(this)
                     val cardLinearLayoutParams = ActionBar.LayoutParams(
@@ -89,13 +88,22 @@ class MainActivity : AppCompatActivity() {
                     )
                     cardLinearLayout.layoutParams = cardLinearLayoutParams
 
-
                     val imageV = ImageView(this)
                     val imageVParams = LinearLayout.LayoutParams(
                         resources.getDimensionPixelOffset(R.dimen.imageView_width), resources.getDimensionPixelOffset(R.dimen.imageView_height)
                     )
                     imageV.layoutParams = imageVParams
+
+
                     Glide.with(this).load(imageUrl).into(imageV)
+
+//                    val cardImg = CardView(this)
+//                    cardImg.addView(imageV)
+//                    val cardImgParams = ActionBar.LayoutParams(
+//                        ActionBar.LayoutParams.WRAP_CONTENT, ActionBar.LayoutParams.WRAP_CONTENT
+//                    )
+//                    cardImg.layoutParams = cardImgParams
+//                    cardImg.radius = 30f
 
 
                     val titleTv = TextView(this)

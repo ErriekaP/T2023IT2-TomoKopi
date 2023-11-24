@@ -23,10 +23,10 @@
 
             <ImageView
                 android:id="@+id/viewProductImage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="50dp"
                 android:layout_marginRight="20dp"
                 tools:srcCompat="@tools:sample/avatars" />
 
@@ -60,7 +60,7 @@
                     android:inputType="textMultiLine"
                     android:minHeight="48dp"
                     android:text="Dummy text"
-                    android:textAlignment="textStart" />
+                    android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/viewProductPrice"
@@ -71,6 +71,7 @@
                     android:inputType="text"
                     android:minHeight="48dp"
                     android:text="Price"
+                    android:textAlignment="center"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
